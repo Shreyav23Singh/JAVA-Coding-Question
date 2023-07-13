@@ -1,0 +1,19 @@
+
+
+class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hii , I am Shreya Singh ");
+        System.out.println("I am a Frontenfd Developer ");
+        System.out.println("My skills are JAVA , HTML5 , CSS3 ,JavaScript , React.js , Firebase , TypeScript , Redux , Object Oreinted Programming .");
+        System.out.println("I am fun loving person , love to explore around the world , visit new places ! ");
+        System.out.println("I considered my self as a focused person , fast learner , love to work in under presuure .");
+        System.out.println("Let's Code in JAVA  ");
+    }
+}
+
+Output
+Hii , I am Shreya Singh I am a Frontenfd Developer 
+My skills are JAVA , HTML5 , CSS3 ,JavaScript , React.js , Firebase , TypeScript , Redux , Object Oreinted Programming .
+I am fun loving person , love to explore around the world , visit new places ! 
+I considered my self as a focused person , fast learner , love to work in under presuure .
+Let's Code in JAVA
