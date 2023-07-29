@@ -1,0 +1,25 @@
+import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) {
+        int fact=1;
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        for(int i=1;i<=n;i++){
+            fact=fact*i;
+            System.out.println("Factorial of n is = "+fact);
+            
+        }
+        
+        
+
+    }
+}
+
+_________________________________________________________ Output ________________________________________________
+java -cp /tmp/YPTnXppp2k HelloWorld
+5
+Factorial of n is = 1
+Factorial of n is = 2
+Factorial of n is = 6
+Factorial of n is = 24
+Factorial of n is = 120
