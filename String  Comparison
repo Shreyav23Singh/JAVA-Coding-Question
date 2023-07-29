@@ -1,0 +1,36 @@
+import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) {
+        
+        Scanner sc=new Scanner(System.in);
+        String s1=sc.nextLine();
+        String s2=sc.nextLine();
+        
+        if(s1.compareTo(s2)>0){
+            System.out.println("String 1 is larger than String  2");
+        }else if(s1.compareTo(s2)<0){
+            System.out.println("String 1 is smaller than String  2");
+        }else{
+            System.out.println("Both are equal");
+        }
+        
+        
+
+    }
+}
+
+
+____________________________________ Output ________________________________________________________________
+Success
+HardWork
+String 1 is larger than String  2
+
+
+Hardwork 
+consistency
+String 1 is smaller than String  2 
+
+
+fun
+fun
+Both are equal
