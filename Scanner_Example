@@ -1,0 +1,30 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter a String : ");
+        String str=sc.nextLine();
+        System.out.println("You entered a String : " +str);
+        System.out.println("Enter a Integer : ");
+        int  no=sc.nextInt();
+        System.out.println(" You entered a Integer : "+no);
+        System.out.println("Enter a Float : ");
+        float fl= sc.nextFloat();
+        System.out.println("you entered a Float : " +fl);
+        
+       
+    }
+}
+
+
+--------------------------------------------------------------  Output -----------------------------------------------------------------------------
+java -cp /tmp/lTTZqFt2HS HelloWorld
+Enter a String : hi
+You entered a String : hi
+Enter a Integer : 12
+You entered a Integer : 12
+Enter a Float : 
+3.6
+you entered a Float : 3.6
