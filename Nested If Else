@@ -1,0 +1,23 @@
+import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) {
+        int passingMarks=40;
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        if(a>passingMarks){
+            System.out.println("Congratulations ! You have cleared the exam ");
+        }
+        else if (a==passingMarks){
+            System.out.println("Opps ! You have to reappear to clear the exam ");
+        }else{
+            System.out.println("Unfortunately ! You have failled the exam ");
+        }
+        
+
+    }
+}
+
+________________________________________________________________ Output ___________________________________________________________________
+java -cp /tmp/YPTnXppp2k HelloWorld
+40
+Opps ! You have to reappear to clear the exam 
