@@ -1,0 +1,26 @@
+import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int on=n;
+        int sum=0;
+        while(n!=0){
+            int digit=n%10;
+            sum+=Math.pow(digit, Integer.toString(on).length());
+            n/=10;
+        }
+        if(sum==on){
+            System.out.println("number is  an armstrong number");
+        }else{
+            System.out.println("number is not a armstrong number");
+        }
+        
+    }
+}
+
+
+----------------------------------------------------Output ____________________________________________________
+java -cp /tmp/fBo1N3tFa9 HelloWorld
+153
+number is  an armstrong number
