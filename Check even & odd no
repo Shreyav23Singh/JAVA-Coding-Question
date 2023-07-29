@@ -1,0 +1,21 @@
+import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) {
+        
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        if(a % 2 == 0){
+            System.out.println("a is an even number");
+        }
+        else{
+            System.out.println("It's a odd number ");
+        }
+        
+
+    }
+}
+
+____________________________________________________ Output __________________________________________________________
+java -cp /tmp/YPTnXppp2k HelloWorld
+11
+It's a odd number 
