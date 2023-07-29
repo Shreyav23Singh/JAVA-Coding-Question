@@ -1,0 +1,17 @@
+Q.  Enhance loop in java Program
+
+
+class HelloWorld {
+    public static void main(String[] args) {
+        int no[]={1,3,5,7,9,11,13,17,19};
+        for(int i : no){
+            System.out.println(i);
+        }
+        System.out.println();
+        System.out.println("Skills required to become Software engineer :  ");
+        String str[] = {"HTML" , "CSS3" , "JavaScript" , "React.js" , "Git" , "GitHub" , "OOPs"};
+        for(String sample : str){
+            System.out.println(str);
+        }
+    }
+}
