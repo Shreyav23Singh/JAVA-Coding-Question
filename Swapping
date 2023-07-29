@@ -1,0 +1,19 @@
+Q.  How to swap 2 no using 3rd variable Program in java
+
+class HelloWorld {
+    public static void main(String[] args) {
+        int a =52;
+        int b=12;
+        int temp=a;
+        a=b;
+        b=temp;
+        System.out.println("a swap with b : " +a);
+        System.out.println("b swap with a : "+b);
+
+    }
+}
+
+______________________________________________ Output ______________________________________________________________________
+java -cp /tmp/YPTnXppp2k HelloWorld
+a swap with b : 12
+b swap with a : 52
