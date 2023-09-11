@@ -1,0 +1,24 @@
+In Java, a static method is a method that belongs to a class rather than an instance of that class. This means you can call a static method on the class itself, without needing to create an instance of the class.
+◾💥Example :-
+
+class Employee{
+ int emp_id;
+ String emp_name;
+ static String company_name = "Amazon";
+ Employee(int id , String name){
+  emp_id=id;
+  emp_name=name;
+ }
+ void display(){
+  System.out.println(emp_id +" " +emp_name+ " " + company_name);
+ }
+  public static void main(String[] args){
+   Employee E1=new Employee(456 ," Reyanshi");
+   Employee E2=new Employee(478 ," Shreya " );
+  E1.display();
+  E2.display();
+ }
+}
+💥Static Method : -💥1. A static methods belongs to the class rather than object of a class.
+2. A static method can be invoked without the need for creating an instance of a class .
+3. Static method can access static data member and can change the value of it .
