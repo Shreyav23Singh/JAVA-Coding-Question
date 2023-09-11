@@ -1,0 +1,35 @@
+class Employee{
+
+  int emp_id;
+
+  String emp_name;
+
+  static String company_name = "Amazon";
+
+  Employee(int id , String name){
+
+    emp_id=id;
+
+    emp_name=name;
+
+  }
+
+  void display(){
+
+    System.out.println(emp_id +" " +emp_name+ " " + company_name);
+
+  }
+
+    public static void main(String[] args){
+
+      Employee E1=new Employee(456 ," Reyanshi");
+
+      Employee E2=new Employee(478 ," Shreya " );
+
+    E1.display();
+
+    E2.display();
+
+  }
+
+}
