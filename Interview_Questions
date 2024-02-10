@@ -1,0 +1,68 @@
+💥1️⃣ How many types of memory areas are allocated by JVM?
+🅰️ JVM (Java Virtual Machine) is an abstract machine, In other words, it is a program/software which takes Java bytecode and converts the byte code (line by line) into machine-understandable code.
+• All these functions take different forms of memory structure. The memory in the JVM is divided into 5 different parts:
+
+♦️Class(Method) Area
+♦️Heap
+♦️Stack
+♦️Program Counter Register
+♦️Native Method Stack
+
+💥2️⃣ . What are the types of exceptions in java?
+🅰️There are mainly two types of exceptions: checked and unchecked. An error is considered an unchecked exception.
+✔️Checked Exceptions (Compile-time Exceptions):
+These are exceptions that the compiler requires you to handle. If a method throws a checked exception, the code that calls that method must either catch the exception or declare that it throws the exception.
+Examples : IOException , ClassNotFoundException , SQLException
+try {
+  // code that may throw a checked exception
+} catch (IOException e) {
+  // handle the exception
+}
+
+
+✔️Unchecked Exceptions (Runtime Exceptions):
+These are exceptions that occur at runtime and are not checked by the compiler. Unchecked exceptions are subclasses of RuntimeException or Error.
+Examples : NullPointerException , ArrayIndexOutOfBoundsException ,ArithmeticException
+
+int result = 10 / 0; // ArithmeticException
+
+✔️Error:
+Errors are exceptional conditions that are external to the application, and usually, the application cannot handle them. They are subclasses of the Error class.
+Examples : OutOfMemoryError , StackOverflowError
+
+💥3️⃣ . What is enum ?
+🅰️ An enum (short for enumeration) is a special data type that represents a fixed set of constants. It's a way to create a collection of related values that are distinct from each other. 
+Enumerations are often used to define a set of named constant values for a variable, providing more meaningful names for those values and enhancing code readability.
+
+// Define an enum named Color
+enum Color {
+    RED, GREEN, BLUE;
+}
+
+public class EnumExample {
+    public static void main(String[] args) {
+        // Accessing enum constants
+        Color myColor = Color.RED;
+
+        // Using a switch statement with enum
+        switch (myColor) {
+            case RED:
+                System.out.println("The color is red.");
+                break;
+            case GREEN:
+                System.out.println("The color is green.");
+                break;
+            case BLUE:
+                System.out.println("The color is blue.");
+                break;
+            default:
+                System.out.println("Unknown color.");
+        }
+
+        // Iterating through all enum constants
+        System.out.println("All colors:");
+        for (Color color : Color.values()) {
+            System.out.println(color);
+        }
+    }
+}
