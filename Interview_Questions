@@ -66,3 +66,43 @@ public class EnumExample {
         }
     }
 }
+
+🍀4️⃣ . What is a classloader?
+🅰️🍂Classloader is part of JRE(Java Runtime Environment), during the execution of the bytecode or created .class file classloader is responsible for dynamically loading the java classes and interfaces to JVM(Java Virtual Machine). Because of classloaders Java run time system does not need to know about files and file systems.
+
+🍀5️⃣ . What are the advantages of Packages in Java?
+🅰️🍁There are various advantages of defining packages in Java.
+✅Packages avoid name clashes.
+✅The Package provides easier access control.
+✅We can also have the hidden classes that are not visible outside and are used by the package.
+✅It is easier to locate the related classes.
+
+🍀6️⃣. What are SOLID Principles in Java?
+🅰️🍂The SOLID principles are a set of design principles that help software developers create maintainable and scalable software. These principles were introduced by Robert C. Martin and are widely used in object-oriented programming. The SOLID acronym stands for:
+
+✅Single Responsibility Principle (SRP):
+⭕A class should have only one reason to change, meaning that it should have only one responsibility or job.
+⭕Each class or module should focus on doing one thing and doing it well.
+
+✅Open/Closed Principle (OCP):
+⭕Software entities (classes, modules, functions, etc.) should be open for extension but closed for modification.
+⭕This means that you should be able to add new functionality without changing the existing code.
+
+✅Liskov Substitution Principle (LSP):
+⭕Subtypes must be substitutable for their base types without altering the correctness of the program.
+⭕If a class is a subtype of another class, it should be able to replace its parent without affecting the correctness of the program.
+
+✅Interface Segregation Principle (ISP):
+⭕A class should not be forced to implement interfaces it does not use.
+⭕This principle suggests that it is better to have multiple small, specific interfaces rather than a large, general one.
+
+✅Dependency Inversion Principle (DIP):
+⭕High-level modules should not depend on low-level modules. Both should depend on abstractions.
+⭕Abstractions should not depend on details; details should depend on abstractions.
+⭕This principle encourages the use of interfaces classes to decouple high-level and low-level modules, promoting flexibility and easier maintenance.
+
+🍀7️⃣ Why do we need wrapper classes?
+🅰️The wrapper class is an object class that encapsulates the primitive data types, and we need them for the following reasons:
+1️⃣ Wrapper classes are final and immutable
+2️⃣ Provides methods like valueOf(), parseInt(), etc.
+3️⃣ It provides the feature of autoboxing and unboxing.
