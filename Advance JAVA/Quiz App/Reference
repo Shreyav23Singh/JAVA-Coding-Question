@@ -1,1 +1,21 @@
+To run "QUIZ-CONSOLE-APP" - Need to be there in this directory
+✅ Step 1: Check Your Current Directory
+pwd
+If you are not inside the folder containing Main.java, you need to navigate to it.
+
+✅ Step 2: Navigate to the Correct Directory
+
+cd "c:/Shreya_Notes/Coding/Telusko Course/QUIZ-CONSOLE-APP"
+
+ls
+
+If Main.java is missing, you need to create or move it to this directory.
+
+✅ Step 3: Compile and Run the Program
+Once inside the correct directory, run:
+
+javac Main.java
+
+If it compiles successfully, execute:
+java Main
 
