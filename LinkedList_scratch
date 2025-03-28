@@ -1,0 +1,66 @@
+import java.util.Scanner;
+
+// Node class representing an element in the linked list
+class Node {
+    int data;  // Data stored in the node
+    Node next; // Reference to the next node
+
+    // Constructor to initialize node with data
+    Node(int data) {
+        this.data = data;
+        this.next = null; // Initially, the next reference is null
+    }
+}
+
+// Main class to implement Linked List operations
+public class LinkedListExample {
+    Node head; // Head of the linked list
+
+    // Method to add a new node at the end of the linked list
+    public void add(int data) {
+        Node newNode = new Node(data); // Create a new node
+
+        if (head == null) { 
+            // If the list is empty, set the new node as the head
+            head = newNode;
+        } else {
+            // Traverse to the last node
+            Node temp = head;
+            while (temp.next != null) {
+                temp = temp.next;
+            }
+            // Link the last node to the new node
+            temp.next = newNode;
+        }
+    }
+
+    // Method to print the linked list
+    public void printList() {
+        Node temp = head; // Start from the head
+
+        while (temp != null) {
+            // Print the node data followed by an arrow
+            System.out.print(temp.data + " -> ");
+            temp = temp.next; // Move to the next node
+        }
+        System.out.println("null"); // Indicate the end of the list
+    }
+
+    public static void main(String[] args) {
+        LinkedListExample list = new LinkedListExample(); // Create a LinkedList instance
+        Scanner sc = new Scanner(System.in); // Scanner for user input
+
+        System.out.println("Enter your input: "); // Prompt user for input
+
+        String[] inputs = sc.nextLine().split(" "); // Read input and split into array
+
+        for (String read : inputs) {
+            // Convert input to integer and add to the linked list
+            list.add(Integer.parseInt(read));
+        }
+
+        sc.close(); // Close the scanner to prevent resource leak
+
+        list.printList(); // Print the linked list
+    }
+}
