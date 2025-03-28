@@ -1,0 +1,65 @@
+Q. Problem Statement:  Given a linked list and an integer value val, insert a new node with that value at the beginning (before the head) of the list
+and return the updated linked list.
+Example 1:
+Input Format: 0->1->2, val = 5
+Result: 5->0->1->2
+-----------------------------------------------------------------* Solution * ----------------------------------------------------------------------------------
+import java.util.List;
+import java.util.Arrays;
+
+// Definition of a Node in a Linked List
+class Node {
+    public int data;
+    public Node next;
+
+    // Constructor to initialize node with data and reference to next node
+    public Node(int data1, Node next1) {
+        data = data1;
+        next = next1;
+    }
+
+    // Constructor to initialize node with only data (next defaults to null)
+    public Node(int data1) {
+        data = data1;
+        next = null;
+    }
+}
+
+// Main class containing linked list operations
+public class Main {
+
+    // Function to print the linked list
+    public static void printLL(Node head) {
+        while (head != null) {
+            System.out.print(head.data + " ");
+            head = head.next;
+        }
+        System.out.println(); // Move to the next line after printing the list
+    }
+
+    // Function to insert a new node at the head of the linked list
+    public static Node insertHead(Node head, int val) {
+        Node temp = new Node(val, head); // Create a new node with given value, pointing to old head
+        return temp; // Return new head
+    }
+
+    public static void main(String[] args) {
+        // Creating a list of integers
+        List<Integer> arr = Arrays.asList(12, 8, 5, 7);
+        int val = 9; // Value to be inserted at the head
+
+        // Creating a linked list from initial elements of the array
+        Node head = new Node(arr.get(0)); // First node
+        head.next = new Node(arr.get(1)); // Second node
+        head.next.next = new Node(arr.get(2)); // Third node
+
+        // Incorrect linking: Overwriting head.next.next instead of chaining properly
+        head.next.next = new Node(arr.get(3)); // This breaks the list as it doesn't link correctly
+
+        // Inserting new node at the head of the linked list
+        head = insertHead(head, val);
+
+        // Printing the linked list
+        printLL(head);
+    }
+}
