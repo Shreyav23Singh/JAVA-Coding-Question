@@ -53,8 +53,8 @@ public class Main {
         head.next = new Node(arr.get(1)); // Second node
         head.next.next = new Node(arr.get(2)); // Third node
 
-        // Incorrect linking: Overwriting head.next.next instead of chaining properly
-        head.next.next = new Node(arr.get(3)); // This breaks the list as it doesn't link correctly
+
+        head.next.next.next = new Node(arr.get(3)); // This breaks the list as it doesn't link correctly
 
         // Inserting new node at the head of the linked list
         head = insertHead(head, val);
